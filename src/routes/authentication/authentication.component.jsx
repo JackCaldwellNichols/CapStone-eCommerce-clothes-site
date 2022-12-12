@@ -3,17 +3,17 @@ import { signInWithGooglePopup, createUserDocumentFromAuth } from '../../utils/f
 import SignUpForm from '../../components/sign-up-form/sign-up-form.jsx'
 import SignInForm from '../../components/sign-in-form/sign-in-form.jsx'
 
-import './authentication.styles.scss'
+import {AuthContainer} from './authentication.styles.jsx'
 
 
 const Authentication = () => {
 
 	
 	return (
-		<div className='authentication-container'>
+		<AuthContainer>
 			<SignInForm />
 			<SignUpForm />
-		</div>
+		</AuthContainer>
 
 	)
 }
